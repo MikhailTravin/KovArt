@@ -1,0 +1,112 @@
+.title1 {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 117%;
+    color: #ab835f;
+    @media (max-width: $tablet) {
+        font-size: 36px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 26px;
+    }
+}
+
+.title2 {
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 90%;
+    color: #fff;
+    @media (max-width: $tablet) {
+        font-size: 42px;
+    }
+    @media (max-width: $mobile) {
+        font-family: var(--third-family);
+        font-size: 34px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0px 35px;
+    margin: -10px 0px 0px 0px;
+    @media (max-width: $mobile) {
+        justify-content: space-between;
+        margin: 0px 15px;
+    }
+    @media (max-width: 430px) {
+        margin: 0px 0px 0px 0px;
+    }
+    // .nav__paginations
+
+    &__paginations {
+        display: flex;
+        align-items: center;
+        gap: 10px 26px;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    // .nav__arrows
+
+    &__arrows {
+        display: flex;
+        gap: 0px 10px;
+    }
+}
+.pagination-bullets {
+    display: flex;
+    gap: 0px 10px;
+    width: 100px;
+    .swiper-pagination-bullet {
+        cursor: pointer;
+        flex: 0 0 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        @media (max-width: $mobile) {
+            background: #e2e2e2;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background: #ab835f;
+        @media (max-width: $mobile) {
+            background: #eac885;
+        }
+    }
+}
+.pagination-fraction {
+    white-space: nowrap;
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 110%;
+    color: rgba(255, 255, 255, 0.7);
+    @media (max-width: $mobile) {
+        color: rgba(213, 213, 213, 0.7);
+    }
+}
+
+.arrow-prev {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #ab835f;
+}
+.arrow-next {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #ab835f;
+}

@@ -1,0 +1,60 @@
+.header {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #2894e3;
+	z-index: 50;
+	transition: opacity 0.3s ease 0s;
+	&:hover {
+		opacity: 0.9;
+	}
+	@media (max-width: $mobile) {
+		background-color: #ab835f;
+	}
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__content
+
+	&__content {
+		display: flex;
+		align-items: center;
+		padding: 20px 0px 20px 10px;
+		@media (max-width: $mobileSmall) {
+			padding: 20px 0px;
+		}
+		img {
+			width: 28px;
+			height: 28px;
+			margin: 0px 16px 0px 0px;
+			@media (max-width: $mobile) {
+				width: 65px;
+				height: 65px;
+				margin: 0px 25px 0px 0px;
+			}
+			@media (max-width: $mobileSmall) {
+				width: 45px;
+				height: 45px;
+				margin: 0px 15px 0px 0px;
+			}
+		}
+		span {
+			font-size: 28px;
+			color: #fff;
+			font-family: var(--font3);
+			@media (max-width: $mobile) {
+				font-size: 26px;
+
+				max-width: 490px;
+			}
+			@media (max-width: $mobileSmall) {
+				font-size: 16px;
+				max-width: 300px;
+			}
+		}
+	}
+}

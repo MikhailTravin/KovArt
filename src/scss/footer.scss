@@ -1,0 +1,24 @@
+.footer {
+    background: #373737;
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__copy
+
+    &__copy {
+        border-top: 1px solid rgba(255, 255, 255, 0.27);
+        padding: 46px 0px 62px 0px;
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 164%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.27);
+        @media (max-width: $mobile) {
+            font-size: 18px;
+            padding: 29px 0px 35px 0px;
+        }
+    }
+}
